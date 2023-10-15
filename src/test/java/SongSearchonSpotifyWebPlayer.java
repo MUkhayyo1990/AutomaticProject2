@@ -23,11 +23,9 @@ public class SongSearchonSpotifyWebPlayer {
 
             driver.findElement(By.xpath("//button[@data-testid='login-button']")).click();
 
-            String email = "emilyjohnson202324@gmail.com";
-            String password = "Duotech2023";
 
-            driver.findElement(By.xpath("//input[@id='login-username']")).sendKeys(email);
-            driver.findElement(By.xpath("//input[@id='login-password']")).sendKeys(password);
+            driver.findElement(By.xpath("//input[@id='login-username']")).sendKeys("emilyjohnson202324@gmail.com");
+            driver.findElement(By.xpath("//input[@id='login-password']")).sendKeys("Duotech2023");
             driver.findElement(By.xpath("//button[@data-testid='login-button']")).click();
 
             WebElement expected = driver.findElement(By.xpath("//div[@data-testid='placeholder-wrapper']"));
